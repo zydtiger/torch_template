@@ -10,7 +10,7 @@ from typing import Literal
 class EarlyStopping:
     """Early stopping to prevent overfitting"""
 
-    def __init__(self, patience=7, min_delta=0):
+    def __init__(self, patience: int, min_delta: float):
         """
         patience (int): How many epochs to wait before stopping when loss is not improving
         min_delta (float): Minimum change in monitored value to qualify as an improvement
