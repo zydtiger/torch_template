@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 import os
 
-from model import LogisiticMLP
+from model import LogisticMLP
 from dataloader import get_train_loader, get_val_loader
 from training_manager import TrainingManager, EarlyStopping
 from vis_utils import visualize_model_performance
@@ -19,7 +19,7 @@ def main():
     batch_size = 32
 
     # Initialize model, criterion, and optimizer
-    model = LogisiticMLP(input_dim=input_dim)
+    model = LogisticMLP(input_dim=input_dim)
     criterion = nn.BCELoss()
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
     early_stopping = EarlyStopping(7, 0)

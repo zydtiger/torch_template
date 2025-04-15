@@ -1,9 +1,9 @@
 import torch.nn as nn
 
 
-class LogisiticMLP(nn.Module):
+class LogisticMLP(nn.Module):
     def __init__(self, input_dim=5):
-        super(LogisiticMLP, self).__init__()
+        super(LogisticMLP, self).__init__()
         self.input = nn.Linear(input_dim, 32)
         self.reduce_dim1 = nn.Linear(32, 16)
         self.reduce_dim2 = nn.Linear(16, 1)
