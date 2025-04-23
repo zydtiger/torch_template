@@ -6,49 +6,49 @@ This project implements a modular neural network training framework with compreh
 
 1. `create_sample_data.py`
 
-- Generates sample data for testing and demonstration
-- Creates training and validation datasets
-- Configurable number of samples
-- Outputs data files required for training
+   - Generates sample data for testing and demonstration
+   - Creates training and validation datasets
+   - Configurable number of samples
+   - Outputs data files required for training
 
 2. `model.py`
 
-- Implements the `LogisticMLP` neural network model
-- Includes:
-  - Configurable input dimensions
-  - Simple MLP architecture for classification tasks
-  - Forward pass implementation
+   - Implements the `LogisticMLP` neural network model
+   - Includes:
+     - Configurable input dimensions
+     - Simple MLP architecture for classification tasks
+     - Forward pass implementation
 
 3. `dataloader.py`
 
-- Implements custom dataset handling functionality
-- Includes:
-  - `CustomDataset` class for data management
-  - Utility functions for creating train and validation data loaders
-  - Configurable batch size (default: 32)
+   - Implements custom dataset handling functionality
+   - Includes:
+     - `CustomDataset` class for data management
+     - Utility functions for creating train and validation data loaders
+     - Configurable batch size (default: 32)
 
 4. `training_manager.py`
 
-- Comprehensive training management system
-- Key components:
-  - `TrainingManager` class for orchestrating the training process
-  - `EarlyStopping` implementation for preventing overfitting
-  - TensorBoard logging integration
-  - Support for different monitoring metrics (validation loss/accuracy)
+   - Comprehensive training management system
+   - Key components:
+     - `TrainingManager` class for orchestrating the training process
+     - `EarlyStopping` implementation for preventing overfitting
+     - TensorBoard logging integration
+     - Support for different monitoring metrics (validation loss/accuracy)
 
 5. `vis_utils.py`
 
-- Visualization utilities for model evaluation
-- Includes:
-  - Confusion matrix plotting
-  - ROC curve visualization
-  - Model performance evaluation functions
-  - Support for binary classification visualization
+   - Visualization utilities for model evaluation
+   - Includes:
+     - Confusion matrix plotting
+     - ROC curve visualization
+     - Model performance evaluation functions
+     - Support for binary classification visualization
 
 6. `main.py`
 
-- Entry point for the training pipeline
-- Orchestrates the entire training process
+   - Entry point for the training pipeline
+   - Orchestrates the entire training process
 
 ## Setup and Usage
 
